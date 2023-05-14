@@ -26,26 +26,30 @@ const Pesanan = ({navigation}) => {
       <Gap height={24} />
 
       <View style={styles.container}>
-        
-      
-
       </View>
       <View style={styles.page}>
         <View style={styles.historyWrapper}>
-          <Text style={styles.transactionTitle}>Last 3 Transactions</Text>
+          <Text style={styles.transactionTitle}>Transaksi Pesanan</Text>
           <Card
-            date="17 April 2023"
-            description="Water, Food"
-            amount="-300.000"
+            date="17 Mei 2023"
+            description="Pesanan NO. 1256743"
+            amount="-35.000"
           />
 
           <Card
-            date="18 April 2023"
-            description="Office supplies"
-            amount="-300.000"
+            date="10 Mei 2023"
+            description="Pesanan NO. 1256730"
+            amount="-50.000"
           />
 
-          <Card date="19 April 2023" description="Top Up" amount="+300.000" />
+          <Card 
+            date="6 Mei 2023"
+            description="Pesanan NO. 1256715"
+            amount="-25.000" />
+          <Card 
+            date="1 Mei 2023"
+            description="Pesanan NO. 1256701"
+            amount="-45.000" />
         </View>
       </View>
     </View>
@@ -64,13 +68,13 @@ const styles = StyleSheet.create({
   },
   header : {
     width : windowWidth,
-    height : windowHeight*0.40
+    height : windowHeight*0.25
   },
   container: {
-    flex: 1,
+
     backgroundColor: '#FFFFFF',
-    paddingHorizontal: 24,
-    paddingTop: 20,
+    paddingHorizontal: 25,
+
   },
   historyWrapper: {
     flex: 1,
